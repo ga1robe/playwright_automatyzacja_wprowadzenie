@@ -183,6 +183,7 @@ To quickly evaluate code use `DEBUG CONSOLE`.
   `"test:pulpit:hd" : "npm run test tests/pulpit.spec.ts -- --headed"`
 
 Scripts can be run in standard and debug mode by:
+
 - hovering over script name and using opition **Run**
 - entering command `npm run script_name` i.e. `npm run test`
 - using `NPM Scripts` tab in **Explorer** view (need to be enabled in **EXPLORER** settings)

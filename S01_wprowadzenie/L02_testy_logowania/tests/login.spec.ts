@@ -21,7 +21,7 @@ test.describe('User login to Demobank', () => {
     await page.getByTestId('error-login-id').click();
 
     await expect(page.getByTestId('error-login-id')).toHaveText(
-      'identyfikator ma min. 8 znaków'
+      'identyfikator ma min. 8 znaków',
     );
   });
 
@@ -34,7 +34,7 @@ test.describe('User login to Demobank', () => {
     await page.getByTestId('password-input').blur();
 
     await expect(page.getByTestId('error-login-password')).toHaveText(
-      'hasło ma min. 8 znaków'
+      'hasło ma min. 8 znaków',
     );
   });
 });

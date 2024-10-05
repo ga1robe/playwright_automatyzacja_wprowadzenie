@@ -13,7 +13,7 @@ test.describe('Pulpit tests', () => {
     await page.goto('/');
     const loginPage = new LoginPage(page);
     await loginPage.login(userId, userPassword);
-    
+
     pulpitPage = new PulpitPage(page);
   });
 
@@ -34,7 +34,7 @@ test.describe('Pulpit tests', () => {
 
     // Assert
     await expect(pulpitPage.messageText).toHaveText(
-      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`
+      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`,
     );
   });
 

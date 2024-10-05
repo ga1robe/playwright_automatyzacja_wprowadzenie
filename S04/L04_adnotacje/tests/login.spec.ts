@@ -32,7 +32,7 @@ test.describe('User login to Demobank', () => {
       // Assert
       const pulpitPage = new PulpitPage(page);
       await expect(pulpitPage.userNameText).toHaveText(expectedUserName);
-    }
+    },
   );
 
   test(
@@ -49,7 +49,7 @@ test.describe('User login to Demobank', () => {
 
       // Assert
       await expect(loginPage.loginError).toHaveText(expectedErrorMessage);
-    }
+    },
   );
 
   test(
@@ -68,6 +68,6 @@ test.describe('User login to Demobank', () => {
 
       // Assert
       await expect(loginPage.passwordError).toHaveText(expectedErrorMessage);
-    }
+    },
   );
 });

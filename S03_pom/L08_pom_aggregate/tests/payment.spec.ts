@@ -6,7 +6,7 @@ import { PulpitPage } from '../pages/pulpit.page';
 
 test.describe('Payment tests', () => {
   let paymentPage: PaymentPage;
-  
+
   test.beforeEach(async ({ page }) => {
     const userId = loginData.userId;
     const userPassword = loginData.userPassword;
@@ -17,7 +17,7 @@ test.describe('Payment tests', () => {
 
     const pulpitPage = new PulpitPage(page);
     await pulpitPage.sideMenuComponent.paymentLink.click();
-    
+
     paymentPage = new PaymentPage(page);
   });
 

@@ -15,7 +15,7 @@ test.describe('Pulpit tests', () => {
     await page.getByTestId('close-button').click();
 
     await expect(page.locator('#show_messages')).toHaveText(
-      'Przelew wykonany! Chuck Demobankowy - 150,00PLN - pizza'
+      'Przelew wykonany! Chuck Demobankowy - 150,00PLN - pizza',
     );
   });
 });

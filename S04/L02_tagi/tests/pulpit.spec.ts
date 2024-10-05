@@ -25,17 +25,17 @@ test.describe('Pulpit tests', () => {
     const transferAmount = '150';
     const transferTitle = 'pizza';
     const expectedTransferReceiver = 'Chuck Demobankowy';
-    
+
     // Act
     await pulpitPage.executeQuickPayment(
       receiverId,
       transferAmount,
-      transferTitle
+      transferTitle,
     );
 
     // Assert
     await expect(pulpitPage.messageText).toHaveText(
-      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`
+      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`,
     );
   });
 

@@ -55,12 +55,12 @@ This is a Test Automation project based on `Playwright` and `TypeScript`. The te
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
 - Formatting: editor -> context menu -> Format Document
 - Formatting shortcut: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
-- Format code on save: 
+- Format code on save:
   - Top menu: View -> Open Command Palette
   - Type: user settings - chose `Preferences: Open User Settings`
   - Search: format on save
   - Edit: check `Editor Format On Save`
-- Reload Window: 
+- Reload Window:
   - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
   - Find and use: `Developer: Reload Window`
 - Rename in opened files: <kbd>F2</kbd>

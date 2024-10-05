@@ -2,6 +2,7 @@
 
 This is a Test Automation project based on `Playwright` and `TypeScript`.  
 The tested page is a simple demo of a bank.
+
 - [Links](#links)
 - [Commands](#commands)
 - [Visual Studio Code](#visual-studio-code)
@@ -9,7 +10,6 @@ The tested page is a simple demo of a bank.
 - [Playwright](#playwright)
 - [Other](#other)
 - [Simple Page Object Model](#simple-page-object-model)
-
 
 ## Links
 
@@ -64,12 +64,12 @@ The tested page is a simple demo of a bank.
 - Show autocomplete suggestion: <kbd>Ctrl</kbd> + <kbd>Spacebar</kbd>
 - Formatting: editor -> context menu -> Format Document
 - Formatting shortcut: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
-- Format code on save: 
+- Format code on save:
   - Top menu: View -> Open Command Palette
   - Type: user settings - chose `Preferences: Open User Settings`
   - Search: format on save
   - Edit: check `Editor Format On Save`
-- Reload Window: 
+- Reload Window:
   - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
   - Find and use: `Developer: Reload Window`
 - Rename in opened files: <kbd>F2</kbd>
@@ -211,10 +211,11 @@ Scripts can be run in standard and debug mode by:
 
 ## Simple Page Object Model
 
-Simple implementation of Page Object Model can be based on *classes* that represents and implements tested pages.
-Those calsses contains *locators* of elements, that are used in tests, e.g. buttons, inputs etc.
+Simple implementation of Page Object Model can be based on _classes_ that represents and implements tested pages.
+Those calsses contains _locators_ of elements, that are used in tests, e.g. buttons, inputs etc.
 
 Directory structure:
+
 ```
 +-- Projects
 |   +-- pages
@@ -228,6 +229,7 @@ Directory structure:
 ### Page implementation
 
 Simple implementation of login page in `./pages/login.page.ts`:
+
 ```
 import { Page } from '@playwright/test';
 
@@ -244,10 +246,13 @@ export class LoginPage {
 ### Usage in tests
 
 First import of selected page:
+
 ```
 import { LoginPage } from '../pages/login.page';
 ```
+
 Then use page in tests:
+
 ```
     // Act
     const loginPage = new LoginPage(page)

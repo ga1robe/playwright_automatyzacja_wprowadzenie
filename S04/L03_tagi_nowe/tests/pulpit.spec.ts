@@ -31,14 +31,14 @@ test.describe('Pulpit tests', () => {
       await pulpitPage.executeQuickPayment(
         receiverId,
         transferAmount,
-        transferTitle
+        transferTitle,
       );
 
       // Assert
       await expect(pulpitPage.messageText).toHaveText(
-        `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`
+        `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`,
       );
-    }
+    },
   );
 
   test(
@@ -55,9 +55,9 @@ test.describe('Pulpit tests', () => {
 
       // Assert
       await expect(pulpitPage.messageText).toHaveText(
-        new RegExp(expectedMessage)
+        new RegExp(expectedMessage),
       );
-    }
+    },
   );
 
   test(
@@ -75,6 +75,6 @@ test.describe('Pulpit tests', () => {
 
       // Assert
       await expect(pulpitPage.moneyValueText).toHaveText(`${expectedBalance}`);
-    }
+    },
   );
 });

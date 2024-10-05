@@ -15,7 +15,11 @@ export class PaymentPage {
 
   messageText = this.page.locator('#show_messages');
 
-  async makeTransfer(transferReceiver: string, transferAccount: string, transferAmount: string): Promise<void> {
+  async makeTransfer(
+    transferReceiver: string,
+    transferAccount: string,
+    transferAmount: string,
+  ): Promise<void> {
     await this.transferReceiverInput.fill(transferReceiver);
     await this.transferToInput.fill(transferAccount);
     await this.transferAmountInput.fill(transferAmount);
